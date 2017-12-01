@@ -1,0 +1,36 @@
+
+  <div data-role="footer">
+
+
+<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block A</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-b" style="height:60px">Block B</div></div>
+</div><!-- /grid-a -->
+
+
+  </div><!-- /footer -->
+
+
+    <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="a" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+
+
+            {% if page_paths %}
+            {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+               <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+                
+        </ul>
+    </div>
+
+
+
+
+</div><!-- /page -->
+
+

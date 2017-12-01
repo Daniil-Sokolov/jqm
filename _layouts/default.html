@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+<!-- /header -->
+
+   <div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+        {{ content }}
+  
+    </div>
+<!-- /content -->
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
