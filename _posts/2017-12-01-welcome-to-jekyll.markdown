@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2017-12-01 19:47:07 +0300
 categories: jekyll update
-image_path: /assets/img/i1.jpg
+image_path: /jqm/assets/img/i1.jpg
 ---
 
 
